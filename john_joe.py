@@ -1,4 +1,4 @@
-test_cases = int(input('no of test cases : '))
+test_cases = int(input('test cases : '))
 test = [int(input()) for i in range(test_cases)]
 games = []
 for i in test:

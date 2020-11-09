@@ -103,6 +103,8 @@ sachin 3
 sehwag 3
 kohli 3
 '''
+
+
 test_cases = int(input())
 main = []
 for i in range(test_cases):

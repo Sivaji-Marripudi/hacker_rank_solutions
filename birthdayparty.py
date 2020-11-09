@@ -30,24 +30,12 @@ There are 21 chocolates and 3 friends, so he can distribute chocolates eqally. E
 
 
 # solution 
-# test_cases,bools = int(input()),[]
-# l = [list(map(int,input().split())) for i in range(test_cases)]
-# for i in l:
-#     if i[1] % i[0] == 0:
-#         bools.append('Yes')
-#     else:
-#         bools.append('No')
-# for i in bools:
-#     print(i)
-
-test_cases = int(input('enter the testcases : '))
-frnds_list = [int(input()) for i in range(test_cases)]
-num_of_frnds = []
-for i in frnds_list:
-    a = [int(input('frnds : ')) for j in range(i) ]
-    num_of_frnds.append(a)
-print(num_of_frnds)
-satisfy = [int(input('factors : ')) for i in range(test_cases)]
-d = dict(zip(satisfy,num_of_frnds))
-print(d)
-
+test_cases,bools = int(input()),[]
+l = [list(map(int,input().split())) for i in range(test_cases)]
+for i in l:
+    if i[1] % i[0] == 0:
+        bools.append('Yes')
+    else:
+        bools.append('No')
+for i in bools:
+    print(i)
