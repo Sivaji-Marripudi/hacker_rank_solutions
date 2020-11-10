@@ -1,10 +1,23 @@
 test_cases = int(input('enter the testcases : '))
-frnds_list = [int(input()) for i in range(test_cases)]
-num_of_frnds = []
-for i in frnds_list:
-    a = [int(input('frnds : ')) for j in range(i) ]
-    num_of_frnds.append(a)
-print(num_of_frnds)
-satisfy = [int(input('factors : ')) for i in range(test_cases)]
-d = dict(zip(satisfy,num_of_frnds))
+d = {}
+for i in range(test_cases):
+    i = int(input('frnd length : '))
+    l = []
+    for a in range(i):
+        a = int(input('frnd : '))
+        l.append(a)
+    factor = int(input('enter factor : '))    
+    d[factor] = l
 print(d)
+new_d = {}
+for i,j in d.items():
+    a = sorted(j,reverse=False)
+    new_d[i] = a
+print(new_d)
+# res = {}
+# for i,j in new_d.items():
+#     ca = len(j) * j[0]
+#     if i == 1:
+#         res[i] = ca
+# for i,j in res.items():
+#     print(j)
