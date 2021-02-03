@@ -9,15 +9,15 @@ for i in range(test_cases):
     factor = int(input('enter factor : '))    
     d[factor] = l
 print(d)
-new_d = {}
 for i,j in d.items():
-    a = sorted(j,reverse=False)
-    new_d[i] = a
-print(new_d)
-# res = {}
+    
+
+
+
+# main = []
+# gift = 0
 # for i,j in new_d.items():
-#     ca = len(j) * j[0]
-#     if i == 1:
-#         res[i] = ca
-# for i,j in res.items():
-#     print(j)
+#     gift += len(j) * j[0]
+#     gifts = [((j[i] - j[i-1]) * (len(j) - i)) + gift for i in range(len(j)) if i < factor]
+#     main.append(gifts)
+# print(main)

@@ -4,9 +4,11 @@ prime_number = 0
 if num > 1 and num != 4:
     for i in range(2,num//2):
         if num % i == 0:
+            print('dead')
             break
     else:
+        print('prime')
         for i in str(num):
             j = int(i)
             l.append(j)
-print(l)
+print(l)            
